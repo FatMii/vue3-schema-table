@@ -2,8 +2,14 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Vue3 Schema Table',
-  description: '一个高性能、Schema 驱动的动态表格组件库',
+  description: '一个高性能、Schema 驱动的动态表格组件库，专为 Vue 3 设计',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'theme-color', content: '#646cff' }],
+  ],
   themeConfig: {
+    logo: '/logo.png',
+    siteTitle: 'Vue3 Schema Table',
     nav: [
       { text: '指南', link: '/guide/' },
       { text: 'API', link: '/api/' },
@@ -41,6 +47,33 @@ export default defineConfig({
           ],
         },
       ],
+    },
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com' },
+    ],
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: '搜索文档',
+            buttonAriaLabel: '搜索文档',
+          },
+          modal: {
+            noResultsText: '无法找到相关结果',
+            resetButtonTitle: '清除查询条件',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭',
+            },
+          },
+        },
+      },
+    },
+    footer: {
+      message: '基于 Vue 3 构建的高性能表格组件库',
+      copyright: 'Copyright © 2024 Vue3 Schema Table',
     },
   },
 })
