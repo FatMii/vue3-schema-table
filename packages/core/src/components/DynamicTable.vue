@@ -269,18 +269,20 @@
           </template>
 
           <!-- 普通列 -->
-          <div
-            v-for="column in normalColumns"
-            :key="column.key"
-            class="table-cell"
-            :class="`align-${column.align || 'left'}`"
-            :style="{
-              width: (columnWidths[column.key] || column.width) + 'px',
-              minWidth: (columnWidths[column.key] || column.width) + 'px',
-            }"
-          >
-            {{ getCellValue(row, column) }}
-          </div>
+          <template v-for="(column, index) in normalColumns" :key="column.key">
+            <div
+              class="table-cell"
+              :class="`align-${column.align || 'left'}`"
+              :style="{
+                width: (columnWidths[column.key] || column.width) + 'px',
+                minWidth: (columnWidths[column.key] || column.width) + 'px',
+                marginLeft: index === 0 && (rowSelection || leftFixedColumns.length > 0) ? leftFixedWidth + 'px' : '0px',
+                marginRight: index === normalColumns.length - 1 && rightFixedColumns.length > 0 ? rightFixedWidth + 'px' : '0px',
+              }"
+            >
+              {{ getCellValue(row, column) }}
+            </div>
+          </template>
 
           <!-- 固定右侧列 -->
           <template v-if="rightFixedColumns.length > 0">

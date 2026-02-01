@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
+      '@vue3-schema-table/core': resolve(__dirname, '../core/src'),
     },
   },
 })
