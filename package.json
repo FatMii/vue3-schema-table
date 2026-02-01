@@ -1,0 +1,52 @@
+{
+  "name": "vue3-schema-table",
+  "version": "0.1.0",
+  "description": "A high-performance, schema-driven dynamic table component for Vue 3",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter playground dev",
+    "build": "pnpm --filter core build",
+    "build:playground": "pnpm --filter playground build",
+    "test": "pnpm --filter core test",
+    "test:ui": "pnpm --filter core test:ui",
+    "test:coverage": "pnpm --filter core test:coverage",
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:build": "pnpm --filter docs build",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{js,ts,vue,json,md}\"",
+    "type-check": "pnpm -r type-check"
+  },
+  "keywords": [
+    "vue3",
+    "vue",
+    "table",
+    "schema",
+    "dynamic-table",
+    "virtual-scroll",
+    "component"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@types/node": "^20.10.5",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "eslint": "^8.55.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "dependencies": {
+    "@vue3-schema-table/core": "workspace:^"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@vue3-schema-table/playground",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vue3-schema-table/core": "workspace:*",
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "sass": "^1.74.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
+

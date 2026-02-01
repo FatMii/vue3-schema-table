@@ -1,0 +1,67 @@
+/**
+ * Vue3 Schema Table CSS 变量系统
+ * 用户可以通过覆盖这些变量来自定义主题
+ */
+
+:root {
+  /* 主色系 */
+  --vst-primary-color: #1890ff;
+  --vst-primary-color-hover: #40a9ff;
+  --vst-primary-color-active: #096dd9;
+  --vst-primary-shadow: rgba(24, 144, 255, 0.2);
+
+  /* 文本颜色 */
+  --vst-text-color: #262626;
+  --vst-text-color-secondary: #8c8c8c;
+  --vst-text-color-disabled: #bfbfbf;
+  --vst-placeholder-color: #bfbfbf;
+
+  /* 背景色 */
+  --vst-bg-color: #fff;
+  --vst-bg-color-secondary: #fafafa;
+  --vst-disabled-bg: #f5f5f5;
+  --vst-item-hover-bg: rgba(0, 0, 0, 0.06);
+
+  /* 边框 */
+  --vst-border-color: #d9d9d9;
+  --vst-border-color-light: #f0f0f0;
+  --vst-disabled-border: #d9d9d9;
+
+  /* 圆角 */
+  --vst-border-radius: 4px;
+  --vst-border-radius-sm: 2px;
+
+  /* 字体 */
+  --vst-font-size: 14px;
+  --vst-font-size-sm: 12px;
+  --vst-font-size-lg: 16px;
+
+  /* 阴影 */
+  --vst-shadow: rgba(0, 0, 0, 0.15);
+  --vst-shadow-sm: rgba(0, 0, 0, 0.1);
+
+  /* Popover */
+  --vst-popover-bg: #fff;
+
+  /* 表格特定 */
+  --vst-table-header-bg: #fafafa;
+  --vst-table-row-hover-bg: #fafafa;
+  --vst-table-border-color: #e8e8e8;
+}
+
+/* Element Plus 风格主题 */
+.vst-theme-element {
+  --vst-primary-color: #409eff;
+  --vst-primary-color-hover: #66b1ff;
+  --vst-primary-color-active: #3a8ee6;
+  --vst-border-radius: 4px;
+}
+
+/* Ant Design 风格主题 */
+.vst-theme-antd {
+  --vst-primary-color: #1890ff;
+  --vst-primary-color-hover: #40a9ff;
+  --vst-primary-color-active: #096dd9;
+  --vst-border-radius: 2px;
+}
+
