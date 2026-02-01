@@ -44,3 +44,7 @@ lerna-debug.log*
 .temp
 .cache
 
+# VitePress
+docs/.vitepress/cache
+docs/.vitepress/dist
+
